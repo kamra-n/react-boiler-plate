@@ -1,16 +1,18 @@
 import { initializeApp } from "firebase/app"
 import { getFirestore } from 'firebase/firestore'
+import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyDIqxpQAzlGVw8LI5Pk5RSwsWvlEW6IooY",
-    authDomain: "twitter-clone-saylani-project.firebaseapp.com",
-    projectId: "twitter-clone-saylani-project",
-    storageBucket: "twitter-clone-saylani-project.appspot.com",
-    messagingSenderId: "393671383447",
-    appId: "1:393671383447:web:62c457018ccbb644f50cd2",
-    measurementId: "G-S47VS1EPRE"
+    apiKey: "AIzaSyCLKApA2wO9eMMhg05TvzFqZCAUxlhJtYs",
+  authDomain: "twitter-clone-saylani-task.firebaseapp.com",
+  projectId: "twitter-clone-saylani-task",
+  storageBucket: "twitter-clone-saylani-task.appspot.com",
+  messagingSenderId: "414596930465",
+  appId: "1:414596930465:web:1980d8335abd9ada6549e0",
+  measurementId: "G-N5R2D39VC2"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const db = getFirestore(app)
+export const db = getFirestore(app)
+export const storage = getStorage(app)
